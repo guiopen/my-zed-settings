@@ -7,105 +7,107 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "base_keymap": "VSCode",
-  "icon_theme": "Material Icon Theme",
-  "show_edit_predictions": false,
-  "ui_font_size": 16,
-  "buffer_font_size": 15,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Zedokai (Filter Spectrum)"
-  },
-  "autosave": { "after_delay": { "milliseconds": 1000 } },
-  "tabs": { "git_status": true, "file_icons": true },
-  "git": {
-    "inline_blame": { "enabled": false }
-  },
-  "project_panel": { "hide_root": true },
-  "lsp": {
-    "gopls": {
-      "initialization_options": {
-        "ui.completion.usePlaceholders": false
-      }
-    }
-  },
+	"base_keymap": "VSCode",
+	"icon_theme": "Material Icon Theme",
+	"show_edit_predictions": false,
+	"ui_font_size": 16,
+	"buffer_font_size": 15,
+	"hard_tabs": true,
+	"tab_size": 4,
+	"autosave": { "after_delay": { "milliseconds": 1000 } },
+	"tabs": { "git_status": true, "file_icons": true },
+	"project_panel": { "hide_root": true },
+	"git": { "inline_blame": { "enabled": false } },
 
-  "agent": {
-    "profiles": {
-      "write": {
-        "name": "Write",
-        "tools": {
-          "copy_path": true,
-          "create_directory": true,
-          "delete_path": true,
-          "diagnostics": true,
-          "edit_file": true,
-          "fetch": true,
-          "list_directory": true,
-          "move_path": true,
-          "now": true,
-          "find_path": true,
-          "read_file": true,
-          "grep": true,
-          "terminal": true,
-          "thinking": true,
-          "web_search": true
-        },
-        "enable_all_context_servers": true,
-        "context_servers": {
-          "mcp-server-context7": {
-            "tools": {
-              "resolve-library-id": false,
-              "get-library-docs": false
-            }
-          }
-        }
-      },
-      "ask": {
-        "name": "Ask",
-        "tools": {
-          "contents": true,
-          "diagnostics": true,
-          "fetch": true,
-          "list_directory": true,
-          "now": true,
-          "find_path": true,
-          "read_file": true,
-          "open": true,
-          "grep": true,
-          "thinking": true,
-          "web_search": true
-        },
-        "enable_all_context_servers": false,
-        "context_servers": {
-          "mcp-server-context7": {
-            "tools": {
-              "resolve-library-id": true,
-              "get-library-docs": true
-            }
-          }
-        }
-      }
-    },
-    "always_allow_tool_actions": true,
-    "default_profile": "ask",
-    "model_parameters": [{ "temperature": 0.6 }],
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "commit_message_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    },
-    "thread_summary_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    }
-  }
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "Zedokai (Filter Spectrum)"
+	},
+
+	"lsp": {
+		"gopls": {
+			"initialization_options": {
+				"ui.completion.usePlaceholders": false
+			}
+		}
+	},
+
+	"agent": {
+		"profiles": {
+			"write": {
+				"name": "Write",
+				"tools": {
+					"copy_path": true,
+					"create_directory": true,
+					"delete_path": true,
+					"diagnostics": true,
+					"edit_file": true,
+					"fetch": true,
+					"list_directory": true,
+					"move_path": true,
+					"now": true,
+					"find_path": true,
+					"read_file": true,
+					"grep": true,
+					"terminal": true,
+					"thinking": true,
+					"web_search": true
+				},
+				"enable_all_context_servers": true,
+				"context_servers": {
+					"mcp-server-context7": {
+						"tools": {
+							"resolve-library-id": false,
+							"get-library-docs": false
+						}
+					}
+				}
+			},
+			"ask": {
+				"name": "Ask",
+				"tools": {
+					"contents": true,
+					"diagnostics": true,
+					"fetch": true,
+					"list_directory": true,
+					"now": true,
+					"find_path": true,
+					"read_file": true,
+					"open": true,
+					"grep": true,
+					"thinking": true,
+					"web_search": true
+				},
+				"enable_all_context_servers": false,
+				"context_servers": {
+					"mcp-server-context7": {
+						"tools": {
+							"resolve-library-id": true,
+							"get-library-docs": true
+						}
+					}
+				}
+			}
+		},
+		"always_allow_tool_actions": true,
+		"default_profile": "ask",
+		"model_parameters": [{ "temperature": 0.6 }],
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "gpt-4.1"
+		},
+		"inline_assistant_model": {
+			"provider": "copilot_chat",
+			"model": "gpt-4.1"
+		},
+		"commit_message_model": {
+			"provider": "copilot_chat",
+			"model": "gpt-4.1"
+		},
+		"thread_summary_model": {
+			"provider": "copilot_chat",
+			"model": "gpt-4.1"
+		}
+	}
 }
