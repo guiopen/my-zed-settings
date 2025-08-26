@@ -37,20 +37,21 @@
   },
 
   "auto_install_extensions": {
-    "zedokai": true,
     "material-icon-theme": true,
+    "zedokai": true,
     "dart": true,
     "elixir": true,
     "sql": true,
     "svelte": true,
     "zig": true,
     "git-firefly": true,
-    "mcp-server-context7": true
+    "mcp-server-context7": true,
+    "mcp-server-sequential-thinking": true
   },
 
   "agent": {
     "default_profile": "ask",
-    "model_parameters": [{ "temperature": 0.7 }],
+    "model_parameters": [{ "temperature": 0.0 }],
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini"
