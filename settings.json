@@ -7,50 +7,66 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-	"base_keymap": "VSCode",
-	"icon_theme": "Material Icon Theme",
-	"show_edit_predictions": false,
-	"ui_font_size": 16,
-	"buffer_font_size": 15,
-	"hard_tabs": true,
-	"tab_size": 4,
-	"autosave": { "after_delay": { "milliseconds": 1000 } },
-	"tabs": { "git_status": true, "file_icons": true },
-	"project_panel": { "hide_root": true },
-	"git": { "inline_blame": { "enabled": false } },
+  "base_keymap": "VSCode",
+  "icon_theme": "Material Icon Theme",
+  "show_edit_predictions": true,
+  "ui_font_size": 15,
+  "agent_font_size": 15,
+  "buffer_font_size": 14,
+  "autosave": { "after_delay": { "milliseconds": 1000 } },
+  "tabs": { "git_status": true, "file_icons": true },
+  "project_panel": { "hide_root": true },
+  "git": { "inline_blame": { "enabled": false } },
 
-	"theme": {
-		"mode": "system",
-		"light": "One Light",
-		"dark": "Zedokai (Filter Spectrum)"
-	},
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Zedokai (Filter Spectrum)"
+  },
 
-	"lsp": {
-		"gopls": {
-			"initialization_options": {
-				"ui.completion.usePlaceholders": false
-			}
-		}
-	},
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "ui.completion.usePlaceholders": false
+      }
+    }
+  },
 
-	"agent": {
-		"default_profile": "ask",
-		"model_parameters": [{ "temperature": 0.6 }],
-		"default_model": {
-			"provider": "copilot_chat",
-			"model": "gpt-4.1"
-		},
-		"inline_assistant_model": {
-			"provider": "copilot_chat",
-			"model": "gpt-4.1"
-		},
-		"commit_message_model": {
-			"provider": "copilot_chat",
-			"model": "gpt-4.1"
-		},
-		"thread_summary_model": {
-			"provider": "copilot_chat",
-			"model": "gpt-4.1"
-		}
-	}
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+
+  "auto_install_extensions": {
+    "zedokai": true,
+    "material-icon-theme": true,
+    "dart": true,
+    "elixir": true,
+    "sql": true,
+    "svelte": true,
+    "zig": true,
+    "git-firefly": true,
+    "mcp-server-context7": true
+  },
+
+  "agent": {
+    "use_modifier_to_send": true,
+    "default_profile": "ask",
+    "model_parameters": [{ "temperature": 0.7 }],
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
+    "commit_message_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
+    "thread_summary_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    }
+  }
 }
