@@ -49,7 +49,7 @@
   },
 
   "agent": {
-    "default_profile": "write",
+    "default_profile": "ask",
     "model_parameters": [{ "temperature": 0.7 }],
     "default_model": {
       "provider": "copilot_chat",
