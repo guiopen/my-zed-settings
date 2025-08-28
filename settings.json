@@ -11,7 +11,6 @@
   "icon_theme": "Material Icon Theme",
   "show_edit_predictions": true,
   "ui_font_size": 15,
-  "agent_font_size": 15,
   "buffer_font_size": 14,
   "autosave": { "after_delay": { "milliseconds": 1000 } },
   "tabs": { "git_status": true, "file_icons": true },
