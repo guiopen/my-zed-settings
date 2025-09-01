@@ -18,8 +18,8 @@
   "git": { "inline_blame": { "enabled": false } },
 
   "theme": {
-    "mode": "system",
-    "light": "One Light",
+    "mode": "dark",
+    "light": "Zedokai Light (Filter Sun)",
     "dark": "Zedokai (Filter Spectrum)"
   },
 
@@ -49,8 +49,29 @@
   },
 
   "agent": {
+    "profiles": {
+      "ask": {
+        "name": "Ask",
+        "tools": {
+          "contents": true,
+          "diagnostics": true,
+          "fetch": true,
+          "list_directory": true,
+          "project_notifications": false,
+          "now": true,
+          "find_path": true,
+          "read_file": true,
+          "open": true,
+          "grep": true,
+          "thinking": true,
+          "web_search": true
+        },
+        "enable_all_context_servers": true
+      }
+    },
+    "always_allow_tool_actions": true,
     "default_profile": "ask",
-    "model_parameters": [{ "temperature": 0.0 }],
+    "model_parameters": [{ "temperature": 0.1 }],
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini"
