@@ -44,7 +44,6 @@
     "svelte": true,
     "zig": true,
     "git-firefly": true,
-    "mcp-server-context7": true,
     "mcp-server-sequential-thinking": true
   },
 
@@ -71,7 +70,10 @@
     },
     "always_allow_tool_actions": true,
     "default_profile": "ask",
-    "model_parameters": [{ "temperature": 0.1 }],
+    "model_parameters": [
+      { "temperature": 0.7 },
+      { "provider": "mistral", "temperature": 0.15 }
+    ],
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-5-mini"
